@@ -2,9 +2,9 @@ class ActorsController < ApplicationController
 
   def index
     @list_of_actors = Actor.all
-    @list_of_movies = Movie.all
-    @list_of_directors = Director.all
-    @list_of_characters = Character.all
+    #@list_of_movies = Movie.all
+    #@list_of_directors = Director.all
+    #@list_of_characters = Character.all
     render({ :template => "actor_templates/index.html.erb"})
   end
 

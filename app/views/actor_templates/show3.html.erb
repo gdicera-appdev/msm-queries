@@ -1,4 +1,4 @@
-<h1>List of all actors</h1>
+<h1>Actor #<%= @the_actor.id%> details</h1>
 
 <a href="/actors" class="btn btn-block btn-outline-secondary">
   Go back
@@ -13,7 +13,6 @@
   <dd>
     <%= @the_actor.name%>
   </dd>
-
   <dt>
     Dob
   </dt>
@@ -68,11 +67,10 @@
       <%= d.name %>
     </td>
     <td>
-      <% c = Character.where({ :id => a_film.character_id }).at(0)%>
-      <%= c.name %>
+      <%= @the_character.name %>
     </td>
     <td>
-      <a href = "/movies/1">
+      <a href = "/movies/">
       Show details
       </a>
     </td>
